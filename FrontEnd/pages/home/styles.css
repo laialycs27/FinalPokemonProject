@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../../assets/images/home-page.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 700px;
+  width: 90%;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  background: linear-gradient(to right, #fbd100, #f96d6d, #1ea7ff, #42f57e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.auth-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 28px 0 8px;
+}
+
+.auth-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+  color: #0b0b0b;
+  background: linear-gradient(90deg, #fbd100, #f96d6d, #1ea7ff, #42f57e);
+  background-size: 200% 100%;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+  transition: transform 160ms ease, box-shadow 160ms ease, background-position 300ms ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-btn::before {
+  content: "";
+  position: absolute;
+  inset: -200%;
+  background: radial-gradient(closest-side, rgba(255,255,255,0.18), transparent 70%);
+  transform: translateX(-60%);
+  transition: transform 400ms ease;
+}
+
+.auth-btn:hover {
+  transform: translateY(-2px);
+  background-position: 100% 0;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.45);
+}
+
+.auth-btn:hover::before {
+  transform: translateX(40%);
+}
+
+.auth-btn .icon {
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.auth-btn:focus-visible {
+  outline: 3px solid rgba(66, 245, 126, 0.9);
+  outline-offset: 2px;
+}
+
+@media (max-width: 520px) {
+  .auth-links {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .auth-btn {
+    width: 100%;
+  }
+}
+
+.info-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#description {
+  margin: 15px 0;
+  font-size: 1rem;
+  color: #f1f1f1;
+}
+
+#student-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+#student-list li {
+  padding: 6px 0;
+  font-weight: 500;
+}

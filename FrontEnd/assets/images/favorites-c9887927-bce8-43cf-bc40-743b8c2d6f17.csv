@@ -1,0 +1,5 @@
+ID,Name,Image,Types,Abilities
+1,bulbasaur,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png,"grass, poison","overgrow, chlorophyll"
+6,charizard,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png,"fire, flying","blaze, solar-power"
+2,ivysaur,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png,"grass, poison","overgrow, chlorophyll"
+3,venusaur,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png,"grass, poison","overgrow, chlorophyll"

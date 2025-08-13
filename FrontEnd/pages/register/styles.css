@@ -1,0 +1,143 @@
+/* Original styles pasted below */
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../../assets/images/login-register-page.jpg");
+  background-size: cover;
+}
+
+/* Background Shapes */
+.background {
+  width: 430px;
+  height: 520px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+.background .shape {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+.shape:first-child {
+  background: linear-gradient(#1845ad, #23a2f6);
+  left: -80px;
+  top: -80px;
+}
+.shape:last-child {
+  background: linear-gradient(to right, #ff512f, #f09819);
+  right: -30px;
+  bottom: -80px;
+}
+
+/* Form */
+form {
+  height: auto;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.13);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
+}
+form * {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+form h3 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 1px solid white; 
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+  color: white; 
+}
+
+input:focus {
+  outline: none;
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, 0.09);
+  box-shadow: 0 0 6px #fbd100,
+              0 0 9px #f96d6d,
+              0 0 12px #1ea7ff,
+              0 0 15px #42f57e;
+}
+
+input.input-error {
+  border-color: #ff4d4d !important;
+}
+
+
+::placeholder {
+  color: #000000;
+}
+
+button {
+  margin-top: 50px;
+  width: 100%;
+  background: linear-gradient(to right, #fbd100, #f96d6d, #1ea7ff, #42f57e);
+  color: #ffffff;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease;
+  background-size: 300% 100%;
+  animation: gradientFlow 5s ease infinite;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Error message */
+.error-message {
+  margin-top: 15px;
+  color: #ff4d4d;
+  text-align: center;
+  font-size: 14px;
+}

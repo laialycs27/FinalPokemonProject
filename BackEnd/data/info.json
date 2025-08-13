@@ -1,0 +1,9 @@
+{
+  "students": [
+    {
+      "name": "Laialy Abu Awad",
+      "id": "325142297"
+    }
+  ],
+  "description": "This is my final web development course project. The application allows users to search for Pokémon by ID, type, or ability. Registered users can save up to 10 favorites, manage them securely using session-based login, and view additional information like Pokémon details and a battle arena. All user and favorite data is stored in JSON format on the server."
+}

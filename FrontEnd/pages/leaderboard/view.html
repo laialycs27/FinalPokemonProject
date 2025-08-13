@@ -1,0 +1,89 @@
+<header class="topbar">
+  <div class="left">
+    <button id="navToggle" class="icon-btn" aria-label="Open menu" aria-expanded="false" aria-controls="sidenav">☰</button>
+    <h1 class="app-title">Leaderboard</h1>
+  </div>
+
+  <div class="userbox">
+    <span id="userLabel" class="user-label" aria-live="polite"></span>
+    <button id="logout" class="btn">Logout</button>
+  </div>
+</header>
+
+<!-- Collapsible side nav -->
+<aside id="sidenav" class="sidenav" aria-hidden="true">
+  <div class="sidenav-header">
+    <span class="sidenav-title">Menu</span>
+    <button id="navClose" class="icon-btn" aria-label="Close menu">×</button>
+  </div>
+
+  <nav class="navlist">
+    <a href="/search" id="navSearch" class="nav-link">
+      <span class="nav-icon">🔎</span>
+      <span class="nav-text">Search</span>
+    </a>
+
+    <a href="/arena" id="navArena" class="nav-link">
+      <span class="nav-icon">⚔️</span>
+      <span class="nav-text">Arena</span>
+    </a>
+
+    <a href="/arena/vs-bot" id="navVsBot" class="nav-link">
+      <span class="nav-icon">🤖</span>
+      <span class="nav-text">Battle vs Bot</span>
+    </a>
+
+    <a href="/arena/random-vs-player" id="navRandom" class="nav-link">
+      <span class="nav-icon">🎲</span>
+      <span class="nav-text">Random vs Player</span>
+    </a>
+
+    <a href="/arena/battle-history" id="navHistory" class="nav-link">
+      <span class="nav-icon">📜</span>
+      <span class="nav-text">Battle History</span>
+    </a>
+
+    <a href="/favorites" id="navFavorites" class="nav-link">
+      <span class="nav-icon">★</span>
+      <span class="nav-text">Favorites</span>
+    </a>
+
+    <a href="/arena/leaderboard" id="navLeaderboard" class="nav-link active" aria-current="page">
+      <span class="nav-icon">🏆</span>
+      <span class="nav-text">Leaderboard</span>
+    </a>
+  </nav>
+</aside>
+<div id="navBackdrop" class="nav-backdrop" hidden></div>
+
+<main class="container">
+  <section class="toolbar">
+    <div class="filters">
+      <div class="group">
+        <label for="search" class="lab">Search</label>
+        <input id="search" class="input" type="search" placeholder="User or ID…" autocomplete="off" />
+      </div>
+
+      <div class="group">
+        <label for="sortBy" class="lab">Sort</label>
+        <select id="sortBy" class="select sort">
+          <option value="points-desc">Points ↓</option>
+          <option value="points-asc">Points ↑</option>
+          <option value="rate-desc">Win rate ↓</option>
+          <option value="battles-desc">Battles ↓</option>
+          <option value="wins-desc">Wins ↓</option>
+          <option value="name-asc">Name A→Z</option>
+        </select>
+      </div>
+
+      <label class="check">
+        <input type="checkbox" id="min5" checked />
+        <span>Only players with ≥5 battles</span>
+      </label>
+    </div>
+
+    <p id="status" class="status"></p>
+  </section>
+
+  <section id="grid" class="lb-grid" aria-live="polite"></section>
+</main>

@@ -1,0 +1,89 @@
+<header class="topbar">
+  <div class="left">
+    <button id="navToggle" class="icon-btn" aria-label="Open menu" aria-expanded="false" aria-controls="sidenav">☰</button>
+    <h1 class="app-title">Arena</h1>
+  </div>
+
+  <div class="userbox">
+    <span id="userLabel" class="user-label" aria-live="polite"></span>
+    <button id="logout" class="btn">Logout</button>
+  </div>
+</header>
+
+<!-- Collapsible side nav -->
+<aside id="sidenav" class="sidenav" aria-hidden="true">
+  <div class="sidenav-header">
+    <span class="sidenav-title">Menu</span>
+    <button id="navClose" class="icon-btn" aria-label="Close menu">×</button>
+  </div>
+
+  <nav class="navlist">
+    <a href="/search" id="navSearch" class="nav-link">
+      <span class="nav-icon">🔎</span>
+      <span class="nav-text">Search</span>
+    </a>
+
+    <a href="/arena" id="navArena" class="nav-link active" aria-current="page">
+      <span class="nav-icon">⚔️</span>
+      <span class="nav-text">Arena</span>
+    </a>
+
+    <a href="/arena/vs-bot" id="navVsBot" class="nav-link">
+      <span class="nav-icon">🤖</span>
+      <span class="nav-text">Battle vs Bot</span>
+    </a>
+
+    <a href="/arena/random-vs-player" id="navRandom" class="nav-link">
+      <span class="nav-icon">🎲</span>
+      <span class="nav-text">Random vs Player</span>
+    </a>
+
+    <a href="/arena/battle-history" id="navHistory" class="nav-link">
+      <span class="nav-icon">📜</span>
+      <span class="nav-text">Battle History</span>
+    </a>
+
+    <a href="/favorites" id="navFavorites" class="nav-link">
+      <span class="nav-icon">★</span>
+      <span class="nav-text">Favorites</span>
+    </a>
+  </nav>
+</aside>
+<div id="navBackdrop" class="nav-backdrop" hidden></div>
+
+<main class="container">
+  <section class="hero">
+    <h2 class="hero-title">Choose your challenge</h2>
+    <p class="hero-sub">Sharpen your skills and climb the ranks.</p>
+  </section>
+
+  <section class="arena-grid" aria-label="Arena options">
+    <button id="tileBot" class="tile accent-blue" aria-label="Battle against bot">
+      <div class="icon-wrap"><span class="tile-icon">🤖</span></div>
+      <h3 class="tile-title">Battle against bot</h3>
+      <p class="tile-sub">Practice and test strategies vs AI.</p>
+      <div class="tile-cta">Enter <span class="arrow">→</span></div>
+    </button>
+
+    <button id="tileRandomPvP" class="tile accent-pink" aria-label="Random Battle vs another player">
+      <div class="icon-wrap"><span class="tile-icon">🎲</span></div>
+      <h3 class="tile-title">Random Battle vs another player</h3>
+      <p class="tile-sub">Find a quick match with a random opponent.</p>
+      <div class="tile-cta">Queue up <span class="arrow">→</span></div>
+    </button>
+
+    <button id="tileHistory" class="tile accent-gold" aria-label="Battle History">
+      <div class="icon-wrap"><span class="tile-icon">📜</span></div>
+      <h3 class="tile-title">Battle History</h3>
+      <p class="tile-sub">Review your past matches and stats.</p>
+      <div class="tile-cta">Open <span class="arrow">→</span></div>
+    </button>
+
+    <button id="tileLeaderboard" class="tile accent-green" aria-label="Leaderboard">
+      <div class="icon-wrap"><span class="tile-icon">🏆</span></div>
+      <h3 class="tile-title">Leaderboard</h3>
+      <p class="tile-sub">See who’s on top of the arena.</p>
+      <div class="tile-cta">View ranks <span class="arrow">→</span></div>
+    </button>
+  </section>
+</main>

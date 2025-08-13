@@ -1,0 +1,90 @@
+<header class="topbar">
+  <div class="left">
+    <button id="navToggle" class="icon-btn" aria-label="Open menu" aria-expanded="false" aria-controls="sidenav">☰</button>
+    <h1 class="app-title">Battle History</h1>
+  </div>
+
+  <div class="userbox">
+    <span id="userLabel" class="user-label" aria-live="polite"></span>
+    <button id="logout" class="btn">Logout</button>
+  </div>
+</header>
+
+<!-- Collapsible side nav -->
+<aside id="sidenav" class="sidenav" aria-hidden="true">
+  <div class="sidenav-header">
+    <span class="sidenav-title">Menu</span>
+    <button id="navClose" class="icon-btn" aria-label="Close menu">×</button>
+  </div>
+
+  <nav class="navlist">
+    <a href="/search" id="navSearch" class="nav-link">
+      <span class="nav-icon">🔎</span>
+      <span class="nav-text">Search</span>
+    </a>
+
+    <a href="/arena" id="navArena" class="nav-link">
+      <span class="nav-icon">⚔️</span>
+      <span class="nav-text">Arena</span>
+    </a>
+
+    <a href="/arena/vs-bot" id="navVsBot" class="nav-link">
+      <span class="nav-icon">🤖</span>
+      <span class="nav-text">Battle vs Bot</span>
+    </a>
+
+    <a href="/arena/random-vs-player" id="navRandom" class="nav-link">
+      <span class="nav-icon">🎲</span>
+      <span class="nav-text">Random vs Player</span>
+    </a>
+
+    <a href="/arena/battle-history" id="navHistory" class="nav-link active" aria-current="page">
+      <span class="nav-icon">📜</span>
+      <span class="nav-text">Battle History</span>
+    </a>
+
+    <a href="/favorites" id="navFavorites" class="nav-link">
+      <span class="nav-icon">★</span>
+      <span class="nav-text">Favorites</span>
+    </a>
+  </nav>
+</aside>
+<div id="navBackdrop" class="nav-backdrop" hidden></div>
+
+<main class="container">
+  <!-- Summary + controls -->
+  <section class="toolbar">
+    <div class="summary">
+      <div class="sum-item"><span class="k">Total</span><span id="sumTotal" class="v">0</span></div>
+      <div class="sum-item win"><span class="k">Wins</span><span id="sumWins" class="v">0</span></div>
+      <div class="sum-item lose"><span class="k">Losses</span><span id="sumLosses" class="v">0</span></div>
+      <div class="sum-item rate"><span class="k">Win rate</span><span id="sumRate" class="v">0%</span></div>
+    </div>
+
+    <div class="controls">
+      <label class="control">
+        <span class="lab">Filter</span>
+        <select id="filterBy" class="select sort">
+          <option value="all">All</option>
+          <option value="wins">Wins only</option>
+          <option value="losses">Losses only</option>
+        </select>
+      </label>
+
+      <label class="control">
+        <span class="lab">Sort</span>
+        <select id="sortBy" class="select sort">
+          <option value="date-desc">Newest first</option>
+          <option value="date-asc">Oldest first</option>
+          <option value="opponent-asc">Opponent A→Z</option>
+          <option value="opponent-desc">Opponent Z→A</option>
+        </select>
+      </label>
+    </div>
+
+    <p id="status" class="status"></p>
+  </section>
+
+  <!-- List -->
+  <section id="list" class="history-grid" aria-live="polite"></section>
+</main>

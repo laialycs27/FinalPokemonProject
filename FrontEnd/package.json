@@ -1,0 +1,8 @@
+{
+  "name": "frontend-spa",
+  "private": true,
+  "scripts": {
+    "start": "serve -l 5001"   
+  },
+  "dependencies": { "serve": "^14.2.0" }
+}

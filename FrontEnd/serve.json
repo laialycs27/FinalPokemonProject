@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/login", "destination": "/index.html" },
+    { "source": "/register", "destination": "/index.html" },
+    { "source": "/search", "destination": "/index.html" },
+    { "source": "/favorites", "destination": "/index.html" },
+    { "source": "/arena", "destination": "/index.html" },
+    { "source": "/arena/vs-bot", "destination": "/index.html" },
+    { "source": "/arena/random-vs-player", "destination": "/index.html" },
+    { "source": "/arena/battle-history", "destination": "/index.html" },
+    { "source": "/arena/leaderboard", "destination": "/index.html" }
+  ]
+}

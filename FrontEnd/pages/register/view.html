@@ -1,0 +1,36 @@
+<form id="register-form">
+  <h3>Register</h3>
+
+  <label for="username">Username</label>
+  <input
+    type="text"
+    placeholder="Enter a username"
+    id="username"
+    required
+    maxlength="50"
+  />
+
+  <label for="email">Email</label>
+  <input type="email" placeholder="Enter your email" id="email" required />
+
+  <label for="password">Password</label>
+  <input
+    type="password"
+    placeholder="Create a password (7–15 chars)"
+    id="password"
+    required
+  />
+
+  <!-- NEW: confirm password -->
+  <label for="confirm-password">Retype Password</label>
+  <input
+    type="password"
+    placeholder="Retype your password"
+    id="confirm-password"
+    required
+  />
+
+  <button type="submit">Register</button>
+
+  <div id="error-message" class="error-message"></div>
+</form>

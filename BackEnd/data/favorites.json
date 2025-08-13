@@ -1,0 +1,250 @@
+[
+  {
+    "userId": "be8695d6-71f6-4418-971c-1be07fd25e61",
+    "favorites": [
+      {
+        "id": 6,
+        "name": "charizard",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png",
+        "types": [
+          "fire",
+          "flying"
+        ],
+        "abilities": [
+          "blaze",
+          "solar-power"
+        ]
+      },
+      {
+        "id": 78,
+        "name": "rapidash",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/78.png",
+        "types": [
+          "fire"
+        ],
+        "abilities": [
+          "run-away",
+          "flash-fire",
+          "flame-body"
+        ]
+      },
+      {
+        "id": 146,
+        "name": "moltres",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/146.png",
+        "types": [
+          "fire",
+          "flying"
+        ],
+        "abilities": [
+          "pressure",
+          "flame-body"
+        ]
+      },
+      {
+        "id": 800,
+        "name": "necrozma",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/800.png",
+        "types": [
+          "psychic"
+        ],
+        "abilities": [
+          "prism-armor"
+        ]
+      },
+      {
+        "id": 900,
+        "name": "kleavor",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/900.png",
+        "types": [
+          "bug",
+          "rock"
+        ],
+        "abilities": [
+          "swarm",
+          "sheer-force",
+          "sharpness"
+        ]
+      },
+      {
+        "id": 100,
+        "name": "voltorb",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/100.png",
+        "types": [
+          "electric"
+        ],
+        "abilities": [
+          "soundproof",
+          "static",
+          "aftermath"
+        ]
+      },
+      {
+        "id": 522,
+        "name": "blitzle",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/522.png",
+        "types": [
+          "electric"
+        ],
+        "abilities": [
+          "lightning-rod",
+          "motor-drive",
+          "sap-sipper"
+        ]
+      },
+      {
+        "id": 523,
+        "name": "zebstrika",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/523.png",
+        "types": [
+          "electric"
+        ],
+        "abilities": [
+          "lightning-rod",
+          "motor-drive",
+          "sap-sipper"
+        ]
+      },
+      {
+        "id": 603,
+        "name": "eelektrik",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/603.png",
+        "types": [
+          "electric"
+        ],
+        "abilities": [
+          "levitate"
+        ]
+      },
+      {
+        "id": 417,
+        "name": "pachirisu",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/417.png",
+        "types": [
+          "electric"
+        ],
+        "abilities": [
+          "run-away",
+          "pickup",
+          "volt-absorb"
+        ]
+      },
+      {
+        "id": 389,
+        "name": "torterra",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/389.png",
+        "types": [
+          "grass",
+          "ground"
+        ],
+        "abilities": [
+          "overgrow",
+          "shell-armor"
+        ]
+      },
+      {
+        "id": 444,
+        "name": "gabite",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/444.png",
+        "types": [
+          "dragon",
+          "ground"
+        ],
+        "abilities": [
+          "sand-veil",
+          "rough-skin"
+        ]
+      },
+      {
+        "id": 383,
+        "name": "groudon",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/383.png",
+        "types": [
+          "ground"
+        ],
+        "abilities": [
+          "drought"
+        ]
+      },
+      {
+        "id": 450,
+        "name": "hippowdon",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/450.png",
+        "types": [
+          "ground"
+        ],
+        "abilities": [
+          "sand-stream",
+          "sand-force"
+        ]
+      },
+      {
+        "id": 292,
+        "name": "shedinja",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/292.png",
+        "types": [
+          "bug",
+          "ghost"
+        ],
+        "abilities": [
+          "wonder-guard"
+        ]
+      },
+      {
+        "id": 356,
+        "name": "dusclops",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/356.png",
+        "types": [
+          "ghost"
+        ],
+        "abilities": [
+          "pressure",
+          "frisk"
+        ]
+      }
+    ]
+  },
+  {
+    "userId": "e3a293f3-75c0-43d1-9c6e-dc1d22a47736",
+    "favorites": [
+      {
+        "id": 3,
+        "name": "venusaur",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png",
+        "types": [
+          "grass",
+          "poison"
+        ],
+        "abilities": [
+          "overgrow",
+          "chlorophyll"
+        ]
+      },
+      {
+        "id": 1,
+        "name": "bulbasaur",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
+        "types": [
+          "grass",
+          "poison"
+        ],
+        "abilities": [
+          "overgrow",
+          "chlorophyll"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "charmander",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png",
+        "types": [
+          "fire"
+        ],
+        "abilities": [
+          "blaze",
+          "solar-power"
+        ]
+      }
+    ]
+  }
+]

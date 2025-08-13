@@ -1,0 +1,97 @@
+<header class="topbar">
+  <div class="left">
+    <button id="navToggle" class="icon-btn" aria-label="Open menu" aria-expanded="false" aria-controls="sidenav">☰</button>
+    <h1 class="app-title">Pokémon Search</h1>
+  </div>
+
+  <div class="userbox">
+    <span id="userLabel" class="user-label" aria-live="polite"></span>
+    <button id="logout" class="btn">Logout</button>
+  </div>
+</header>
+
+<!-- Collapsible side nav -->
+<aside id="sidenav" class="sidenav" aria-hidden="true">
+  <div class="sidenav-header">
+    <span class="sidenav-title">Menu</span>
+    <button id="navClose" class="icon-btn" aria-label="Close menu">×</button>
+  </div>
+
+  <nav class="navlist">
+    <a href="/search" id="navSearch" class="nav-link active" aria-current="page">
+      <span class="nav-icon">🔎</span>
+      <span class="nav-text">Search</span>
+    </a>
+
+    <a href="/arena" id="navArena" class="nav-link">
+      <span class="nav-icon">⚔️</span>
+      <span class="nav-text">Arena</span>
+    </a>
+
+    <a href="/arena/vs-bot" id="navVsBot" class="nav-link">
+      <span class="nav-icon">🤖</span>
+      <span class="nav-text">Battle vs Bot</span>
+    </a>
+
+    <a href="/arena/random-vs-player" id="navRandom" class="nav-link">
+      <span class="nav-icon">🎲</span>
+      <span class="nav-text">Random vs Player</span>
+    </a>
+
+    <a href="/arena/battle-history" id="navHistory" class="nav-link">
+      <span class="nav-icon">📜</span>
+      <span class="nav-text">Battle History</span>
+    </a>
+
+    <a href="/favorites" id="navFavorites" class="nav-link">
+      <span class="nav-icon">★</span>
+      <span class="nav-text">Favorites</span>
+    </a>
+  </nav>
+</aside>
+<div id="navBackdrop" class="nav-backdrop" hidden></div>
+
+<main class="container">
+  <section class="search-panel">
+    <div class="controls">
+      <input
+        id="q"
+        class="input"
+        type="search"
+        placeholder="Search by ability or ID (e.g. damp or 25)"
+        autocomplete="off"
+      />
+      <select id="typeFilter" class="select">
+        <option value="">All types</option>
+        <option>grass</option>
+        <option>fire</option>
+        <option>water</option>
+        <option>electric</option>
+        <option>ground</option>
+        <option>rock</option>
+        <option>psychic</option>
+        <option>ice</option>
+        <option>dragon</option>
+        <option>dark</option>
+        <option>fairy</option>
+        <option>bug</option>
+        <option>ghost</option>
+        <option>fighting</option>
+        <option>poison</option>
+        <option>steel</option>
+        <option>flying</option>
+        <option>normal</option>
+      </select>
+      <!-- Search button removed (live search) -->
+    </div>
+    <p id="status" class="status"></p>
+  </section>
+
+  <section id="results" class="grid"></section>
+
+  <nav class="pager">
+    <button id="prevPage" class="btn" disabled>Prev</button>
+    <span id="pageInfo" class="page-info">Page 1</span>
+    <button id="nextPage" class="btn">Next</button>
+  </nav>
+</main>
